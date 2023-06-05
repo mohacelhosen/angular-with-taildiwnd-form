@@ -2,7 +2,7 @@
     <div class="p-4 bg-fuchsia-200 text-2xl rounded-md">
       <form class="space-y-4 flex flex-col" [formGroup]="singUpForm" (ngSubmit)="onSubmit()">
         <h1 class="text-gray-600 font-semibold mx-auto">Registration</h1>
-        <div class="space-y-4">
+        <div class="space-y-8">
           <div class="name w-full flex space-x-4">
             <div class="firstName">
               <input type="text" class="p-1 pl-4" placeholder="First Name" formControlName="firstName" [ngClass]="{ 'error': singUpForm.get('firstName')?.invalid && (singUpForm.get('firstName')?.dirty || singUpForm.get('firstName')?.touched) }">
